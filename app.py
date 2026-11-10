@@ -7,6 +7,10 @@ app = Flask(__name__)
 
 # == Your Routes Here ==
 
+@app.route('/hello', methods=['GET'])
+def get_hello():
+    return 'Hello from feature A!'
+
 
 # == Example Code Below ==
 
