@@ -25,6 +25,10 @@ def get_emoji():
 def get_about():
     return render_template('about.html')
 
+@app.route('/welcome', methods=['GET'])
+def get_index():
+    return render_template('index.html')
+
 # This imports some more example routes for you to see how they work
 # You can delete these lines if you don't need them.
 from example_routes import apply_example_routes
